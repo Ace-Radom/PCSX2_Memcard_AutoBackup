@@ -29,3 +29,5 @@ SOURCES += \
 
 HEADERS += \
         widget.h
+
+CONFIG += c++11
