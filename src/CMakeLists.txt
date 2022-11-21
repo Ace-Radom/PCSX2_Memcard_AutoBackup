@@ -1,0 +1,3 @@
+set(FORMAT_SRC
+    ${CMAKE_CURRENT_SOURCE_DIR}/formathelp.cpp
+PARENT_SCOPE)
