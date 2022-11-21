@@ -6,7 +6,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH    ${PROJECT_SOURCE_DIR}/bin)
 # in this project, only dll is been created
 
-set(LOGO_RC ${PROJECT_SOURCE_DIR}/logo.rc)
+set(LOGO_RC ${PROJECT_SOURCE_DIR}/ico/logo.rc)
 
 include_directories(include)
 
