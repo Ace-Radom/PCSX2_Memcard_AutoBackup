@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 
-#include"formathelp.h"
+#include"../include/formathelp.h"
 #include"commandlist.h"
 
 #define FOREVER true
@@ -9,11 +9,11 @@
 int main(){
     std::string readin;
 
-    std::cout << "\n"
-              << "============================================================================" << "\n"
+    std::cout << "============================================================================" << "\n"
               << "===                  PCSX2 Memcard Manager Shell v2.0.0                  ===" << "\n"
               << "===  Project Source: https://github.com/Ace-Radom/PCSX2_Memcard_Manager  ===" << "\n"
-              << "===            Still in developing, thank you for any support            ===" << "\n"
+              << "===        For more infos please visit this project's Github site        ===" << "\n"
+              << "===             Still in developing, thanks for your support             ===" << "\n"
               << "============================================================================" << "\n"
               << "\n";
     // print shell begin
