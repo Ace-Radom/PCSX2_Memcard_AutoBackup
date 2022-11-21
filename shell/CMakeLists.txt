@@ -1,8 +1,7 @@
 set(SHELL_MAIN
-    ${PROJECT_SOURCE_DIR}/shell/shell.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/shell.cpp
 PARENT_SCOPE)
 
 set(SHELL_SRC
-    ${PROJECT_SOURCE_DIR}/shell/formathelp.cpp
-    ${PROJECT_SOURCE_DIR}/shell/commandlist.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/commandlist.cpp
 PARENT_SCOPE)
