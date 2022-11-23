@@ -46,3 +46,10 @@ target_link_libraries(test
 )
 
 endif()
+
+file(COPY 
+        ${PROJECT_SOURCE_DIR}/gui/setup/dist/p2mm_setuphelper.exe
+        ${PROJECT_SOURCE_DIR}/gui/setup/setup.ico
+     DESTINATION 
+        ${PROJECT_SOURCE_DIR}/bin
+)
