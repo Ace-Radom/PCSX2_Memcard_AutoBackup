@@ -33,7 +33,7 @@ std::string& rena::erase_blank_chars_at_begin( std::string& __str , const char* 
  * @param __erase_chars given chars ( default: blank_chars[] in @a namespace @c rena )
  */
 std::string& rena::erase_blank_chars_at_end( std::string& __str , const char* __erase_chars = blank_chars ){
-    __str.erase( __str.find_last_not_of( __erase_chars ) );
+    __str.erase( __str.find_last_not_of( __erase_chars ) + 1 );
     return __str;
 }
 
