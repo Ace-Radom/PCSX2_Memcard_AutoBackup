@@ -4,8 +4,9 @@
 #include<string>
 #include<iostream>
 #include<fstream>
+#include<renaini.h>
 
-std::string create_backup_INI();
-std::string create_p2mm_INI();
+void create_backup_INI();
+void create_p2mm_INI();
 
 #endif

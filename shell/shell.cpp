@@ -39,6 +39,19 @@ int main(){
             case rena::bcmd::quit: // quit shell
                 return 0;
                 break;
+
+            case rena::bcmd::clear: // clear shell
+                if ( SYS == "___WINDOWS___" )
+                {
+                    system( "cls" );
+                }
+                if ( SYS == "___linux___" )
+                {
+                    system( "clear" );
+                }
+                // clear command is different in win32 or in linux ("cls" and "clear")
+                // in powershell do recongnize "clear" as clear-screen command but isn't recongnized by win32 system-shell
+
         }
     }
 

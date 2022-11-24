@@ -1,9 +1,11 @@
 #include"commandlist.h"
 
 rena::CMDLIST rena::cmdlist[] = {
-    { "help" , rena::bcmd::help },
-    { "list" , rena::bcmd::list },
-    { "quit" , rena::bcmd::quit }
+    { "help"  , rena::bcmd::help },
+    { "list"  , rena::bcmd::list },
+    { "quit"  , rena::bcmd::quit },
+    { "clear" , rena::bcmd::clear },
+    { "cls"   , rena::bcmd::clear }
 };
 
 uint16_t rena::cmdlistlength = sizeof( cmdlist ) / sizeof( rena::CMDLIST );
