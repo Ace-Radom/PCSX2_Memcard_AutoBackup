@@ -1,0 +1,13 @@
+* text=auto
+
+*.h text
+*.cpp text
+*.txt text
+*.bat text
+*.py text
+*.spec text
+*.cmake text
+
+*.dll binary
+*.ico binary
+*.a binary
