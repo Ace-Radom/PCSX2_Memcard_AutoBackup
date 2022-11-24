@@ -48,6 +48,10 @@ add_executable(p2mm_cc
     ${CREATECONFIG_MAIN}
 )
 
+target_link_libraries(ccextension
+    renaini
+)
+
 target_link_libraries(p2mm_shell
     shellextension
     formatextension
