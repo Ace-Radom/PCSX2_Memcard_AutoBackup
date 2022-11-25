@@ -4,3 +4,4 @@ build
 *.code-workspace
 test.*
 *.log
+*.ini
