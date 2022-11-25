@@ -7,6 +7,10 @@
 #define P2MM_CONFIG   2
 
 int main( int argc , char** argv ){
+    if ( argc != 3 )
+    {
+        return 0;
+    } 
 
     if ( strcmp( argv[BACKUP_CONFIG] , "CREATE" ) == 0 )
     {
