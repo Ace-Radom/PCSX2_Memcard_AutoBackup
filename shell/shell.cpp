@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 
-#include"../include/formathelp.h"
+#include"formathelp.h"
 #include"commandlist.h"
 
 #define FOREVER true

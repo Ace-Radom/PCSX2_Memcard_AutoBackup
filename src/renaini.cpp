@@ -1,4 +1,4 @@
-#include<renaini.h>
+#include"renaini.h"
 
 // blank chars' set
 const char rena::blank_chars[] = " \t\n\r\f\v";

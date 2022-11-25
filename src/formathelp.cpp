@@ -1,4 +1,4 @@
-#include<formathelp.h>
+#include"formathelp.h"
 
 void rena::allcharupper( std::string &__str ){
     for ( int i = 0 ; i < __str.size() ; i++ )
