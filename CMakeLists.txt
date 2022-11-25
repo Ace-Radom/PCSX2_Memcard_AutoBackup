@@ -35,8 +35,8 @@ add_library(renaini SHARED
     ${RENAINI_SRC}
 )
 
-add_library(ccextension SHARED
-    ${CREATECONFIG_SRC}
+add_library(fextension SHARED
+    ${FILEEXT_SRC}
 )
 
 add_executable(p2mm_shell
@@ -48,7 +48,7 @@ add_executable(p2mm_cc
     ${CREATECONFIG_MAIN}
 )
 
-target_link_libraries(ccextension
+target_link_libraries(fextension
     renaini
 )
 
@@ -58,7 +58,7 @@ target_link_libraries(p2mm_shell
 )
 
 target_link_libraries(p2mm_cc
-    ccextension
+    fextension
 )
 
 if(${TEST_PROGRESS})
