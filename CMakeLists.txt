@@ -63,24 +63,25 @@ target_link_libraries(p2mm_cc
 
 if(${TEST_PROGRESS})
 
-add_executable(test test.cpp)
+    add_executable(test test.cpp)
 
-target_link_libraries(test
-    renaini
-)
+    target_link_libraries(test
+        renaini
+        fextension
+    )
 
 endif()
 
 if(${PACK_SETUP_GUI})
 
-execute_process(COMMAND pyinstaller setup.spec
-                WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/gui/setup)   
+    execute_process(COMMAND pyinstaller setup.spec
+                    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/gui/setup)   
 
-file(COPY 
-        ${PROJECT_SOURCE_DIR}/gui/setup/dist/p2mm_setuphelper.exe
-        ${PROJECT_SOURCE_DIR}/gui/setup/setup.ico
-     DESTINATION 
-        ${PROJECT_SOURCE_DIR}/bin
-)
+    file(COPY 
+            ${PROJECT_SOURCE_DIR}/gui/setup/dist/p2mm_setuphelper.exe
+            ${PROJECT_SOURCE_DIR}/gui/setup/setup.ico
+         DESTINATION 
+            ${PROJECT_SOURCE_DIR}/bin
+    )
 
 endif()

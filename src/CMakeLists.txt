@@ -8,5 +8,6 @@ PARENT_SCOPE)
 
 set(FILEEXT_SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/create_config.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/copyfile.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/fop.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/dirop.cpp
 PARENT_SCOPE)
